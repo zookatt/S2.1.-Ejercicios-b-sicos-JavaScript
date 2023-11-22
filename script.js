@@ -301,3 +301,74 @@ console.log(noms1);
 for (const [index, nombre] of noms1.entries() ) {
   console.log(`Index: ${index}, Valor: ${nombre}`);
 }
+
+/*________________________________________________________________*/
+
+//Ejercicio 1.7: Promises & Async/Await
+//Ejercicio 1
+const myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Hola, Mundo!");// Cambio esta linea para ver elresultado de ejercicio 5: reject("Error");
+    }, 2000);
+  });
+  
+  //Ejercicio 2
+  myPromise.then((value) => {
+    console.log(value);
+  });
+  console.log(myPromise);
+  
+  //Ejercicio 3
+  const myPromise1 = (input) => new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (input === 'Hola') {
+        resolve('resolve');
+      } else {
+        reject('reject');
+      }
+    }, 2000);
+  });
+  
+  myPromise1('Hola')
+    .then((resultado) => {
+      console.log(resultado);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+  
+  //Ejercicio 4 - uso de Ejercicio 1
+  async function ejecutarAsync() {
+    const resultado = await myPromise;
+    console.log(resultado);
+  }
+  ejecutarAsync();
+  
+  //Ejercicio 5 - uso de Ejercicio 4
+  async function ejecutarAsyncConError() {
+    try {
+      const resultado = await myPromise;
+      console.log(resultado);
+    } catch (error) {
+      console.error("Error capturado:", error);
+    }
+  }
+  ejecutarAsyncConError();
+  
+  //Ejercicio 6
+  const promesa1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Primera promesa");
+    }, 2000);
+     
+  });
+  const promesa2 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Segunda promesa");
+    }, 3000);
+    
+  });
+  
+  Promise.all([promesa1, promesa2]).then((values) => {
+    console.log(values); 
+  });
