@@ -257,3 +257,47 @@ console.log("Todos numeros son mayores que 10", arr6.every(todos));
 
 const alguno= (el) => el > 10;
 console.log("Algun numero es mayor que 10", arr6.some(alguno));
+
+/*________________________________________________________________*/
+
+
+//Ejercicio 1.6: Array loops
+//Ejercicio 1
+let nombres = ['Anna', 'Bernat', 'Clara'];
+nombres.forEach((element) => console.log(element));
+
+//Ejercicio 2
+let noms = ['Anna', 'Bernat', 'Clara'];
+
+for (const nombre of noms) {
+  console.log(nombre);
+}
+
+//Ejercicio 3
+let numeros1 = [1, 2, 3, 4, 5, 6];
+console.log(numeros1);
+let numeros1Pares = numeros1.filter(el => el % 2 === 0);
+console.log(numeros1Pares);
+
+//Ejercicio 4
+let obj = { nombre: 'Ola', edad: 25, ciudad: 'Barcelona' };
+for (const property in obj) {
+  console.log(`${property}: ${obj[property]}`);
+}
+
+//Ejercicio 5
+let numeros2 = [1, 2, 3, 4, 5, 6];
+console.log(numeros2);
+for (const numero of numeros2) {
+  console.log(numero);
+  if (numero === 5) {
+    break;
+  }
+}
+
+//Ejercicio 6
+let noms1 = ['Anna', 'Bernat', 'Clara'];
+console.log(noms1);
+for (const [index, nombre] of noms1.entries() ) {
+  console.log(`Index: ${index}, Valor: ${nombre}`);
+}
