@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2.1. Ejercicios básicos JavaScript</title>
+    <style>
+        .respuesta h3{
+           text-decoration: underline;
+           color: rgb(24, 95, 48);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+                                         <!--Ejercicio 1.1: Arrow functions-->
+        <div class="pregunta">
+            <h1>Ejercicio 1.1: Arrow functions</h1>
+            <h3>Ejercicio 1</h2>
+            <p>Conversión de funciones: Tienes una función add que acepta dos parámetros y devuelve su suma. <br> 
+            Conviértela en una función de flecha. Por ejemplo:function add(a, b) {return a + b;}.</p>
+        </div>   
+        <div class="respuesta">
+            <h3>Solucion Ejercicio 1</h3>
+            <p>Funcion flecha: <span id="flecha"> </span></p>
+        </div> 
+        <div class="pregunta">
+            <h3>Ejercicio 2</h3>
+            <p>Función de flecha sin parámetros: Crea una función de flecha llamada randomNumber que no necesite parámetros y que devuelva un número aleatorio entre 0 y 100</p>
+        </div>   
+        <div class="respuesta">
+            <h3>Solucion Ejercicio 2</h3>
+            <p>Funcion número aleatorio entre 0 y 100: <span id="randomNumber"> </span></p>
+        </div> 
+        <div class="pregunta">
+            <h3>Ejercicio 3</h3>
+            <p>Uso de 'this' en las funciones de flecha: Crea una clase person que tenga una propiedad name y una función greet que utilice una función de flecha. <br>  
+             La función debe imprimir un saludo que incluya el nombre de la persona. Por ejemplo: console.log(Hola, ${this.name});.</p>
+        </div>   
+        <div class="respuesta">
+            <h3>Solucion Ejercicio 3</h3>
+            <p>Uso de "this" en las funciones de flecha: <span id="this"> </span></p>
+        </div>
+        <div class="pregunta">
+            <h3>Ejercicio 4</h3>
+            <p>Función de flecha dentro de un loop: Crea una función llamada printNumbers que acepte un array de números y utilice<br> 
+                un loop for para imprimir cada número en la consola utilizando una función de flecha.</p>
+        </div>   
+        <div class="respuesta">
+            <h3>Solucion Ejercicio 4</h3>
+            <p>Función de flecha dentro de un loop: <i>La respuesta se imprime por la consola</i> </p>
+        </div>
+        <div class="pregunta">
+            <h3>Ejercicio 5</h3>
+            <p>Función de flecha con 'setTimeout': Crea una función de flecha que imprima un mensaje en la consola después de esperar 3 segundos.</p>
+        </div>   
+        <div class="respuesta">
+            <h3>Solucion Ejercicio 5</h3>
+            <p>Función de flecha con 'setTimeout': <i>La respuesta se imprime por la consola</i> </p>
+            <button onclick="setTimeout(myFunction, 3000);">Recibir mensaje despues de 3 sec</button>
+        </div>
+
+    </div>
+        <script src="./script.js"></script>
+</body>
+</html>
