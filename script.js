@@ -213,3 +213,47 @@ const object2 = { four: 4, five: 5, six: 6 };
 console.log("Objeto 2", object2);
 const object3 = { ...object1, ...object2 };
 console.log("Objeto 3 fusionado", object3);
+
+/*________________________________________________________________*/
+
+
+//Ejercicio 1.5: Array transformations
+//Ejercicio 1
+const arr = [1, 2, 3, 4];
+console.log(arr);
+const arrMap = arr.map(Math.sqrt);
+console.log("Numero cuadrado", arrMap);
+
+//Ejercicio 2
+const arr2 = [1, 2, 3, 4];
+console.log(arr2);
+const arrPar = arr2.filter(el => el % 2 === 0);
+console.log(arrPar);
+
+//Ejercicio 3
+const arr3 = [1, 10, 8, 11];
+console.log(arr3);
+const arrMayor = arr3.find(el => el > 10);
+console.log(arrMayor);
+
+//Ejercicio 4
+const arr4 = [13, 7, 8, 21];
+console.log(arr4);
+const arrSuma = arr4.reduce((acumulador, el) => acumulador + el, 0);
+console.log(arrSuma);
+
+//Ejercicio 5
+const arr5 = [ 1, 3, 7, 10 ,15, 17, 11, 5, 8, 12, 9 ];
+console.log(arr5);
+const allInOne = (arr5)=> arr5.filter(el => el>=10).map(el=>el*2).reduce((acumulador, el) => acumulador + el, 0);
+const resultado5 = allInOne(arr5);
+console.log(resultado5);
+
+//Ejercicio 6
+const arr6 = [11, 12, 13, 14];
+console.log(arr6);
+const todos = (arr6) => arr6 > 10;
+console.log("Todos numeros son mayores que 10", arr6.every(todos));
+
+const alguno= (el) => el > 10;
+console.log("Algun numero es mayor que 10", arr6.some(alguno));
