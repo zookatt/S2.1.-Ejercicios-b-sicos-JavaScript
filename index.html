@@ -1,106 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S2.1. Ejercicios básicos JavaScript</title>
     <style>
-        .respuesta h3{
-           text-decoration: underline;
-           color: rgb(24, 95, 48);
+        .respuesta h3 {
+            text-decoration: underline;
+            color: rgb(24, 95, 48);
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-                                         <!--Ejercicio 1.1: Arrow functions-->
+                                            <!--Ejercicio 1.1: Arrow functions-->
         <div class="pregunta">
             <h1>Ejercicio 1.1: Arrow functions</h1>
             <h3>Ejercicio 1</h2>
-            <p>Conversión de funciones: Tienes una función add que acepta dos parámetros y devuelve su suma. <br> 
-            Conviértela en una función de flecha. Por ejemplo:function add(a, b) {return a + b;}.</p>
-        </div>   
+                <p>Conversión de funciones: Tienes una función add que acepta dos parámetros y devuelve su suma. <br>
+                    Conviértela en una función de flecha. Por ejemplo:function add(a, b) {return a + b;}.</p>
+        </div>
         <div class="respuesta">
             <h3>Solucion Ejercicio 1</h3>
             <p>Funcion flecha: <span id="flecha"> </span></p>
-        </div> 
+        </div>
         <div class="pregunta">
             <h3>Ejercicio 2</h3>
-            <p>Función de flecha sin parámetros: Crea una función de flecha llamada randomNumber que no necesite parámetros y que devuelva un número aleatorio entre 0 y 100</p>
-        </div>   
+            <p>Función de flecha sin parámetros: Crea una función de flecha llamada randomNumber que no necesite
+                parámetros y que devuelva un número aleatorio entre 0 y 100</p>
+        </div>
         <div class="respuesta">
             <h3>Solucion Ejercicio 2</h3>
             <p>Funcion número aleatorio entre 0 y 100: <span id="randomNumber"> </span></p>
-        </div> 
+        </div>
         <div class="pregunta">
             <h3>Ejercicio 3</h3>
-            <p>Uso de 'this' en las funciones de flecha: Crea una clase person que tenga una propiedad name y una función greet que utilice una función de flecha. <br>  
-             La función debe imprimir un saludo que incluya el nombre de la persona. Por ejemplo: console.log(Hola, ${this.name});.</p>
-        </div>   
+            <p>Uso de 'this' en las funciones de flecha: Crea una clase person que tenga una propiedad name y una
+                función greet que utilice una función de flecha. <br>
+                La función debe imprimir un saludo que incluya el nombre de la persona. Por ejemplo: console.log(Hola,
+                ${this.name});.</p>
+        </div>
         <div class="respuesta">
             <h3>Solucion Ejercicio 3</h3>
             <p>Uso de "this" en las funciones de flecha: <span id="this"> </span></p>
         </div>
         <div class="pregunta">
             <h3>Ejercicio 4</h3>
-            <p>Función de flecha dentro de un loop: Crea una función llamada printNumbers que acepte un array de números y utilice<br> 
+            <p>Función de flecha dentro de un loop: Crea una función llamada printNumbers que acepte un array de números
+                y utilice<br>
                 un loop for para imprimir cada número en la consola utilizando una función de flecha.</p>
-        </div>   
+        </div>
         <div class="respuesta">
             <h3>Solucion Ejercicio 4</h3>
             <p>Función de flecha dentro de un loop: <i>La respuesta se imprime por la consola</i> </p>
         </div>
         <div class="pregunta">
             <h3>Ejercicio 5</h3>
-            <p>Función de flecha con 'setTimeout': Crea una función de flecha que imprima un mensaje en la consola después de esperar 3 segundos.</p>
-        </div>   
+            <p>Función de flecha con 'setTimeout': Crea una función de flecha que imprima un mensaje en la consola
+                después de esperar 3 segundos.</p>
+        </div>
         <div class="respuesta">
             <h3>Solucion Ejercicio 5</h3>
             <p>Función de flecha con 'setTimeout': <i>La respuesta se imprime por la consola</i> </p>
             <button onclick="setTimeout(myFunction, 3000);">Recibir mensaje despues de 3 sec</button>
         </div>
 
-                                        <!--Ejercicio 1.2: Operador ternario-->
+                                       <!--Ejercicio 1.2: Operador ternario-->
         <div class="pregunta">
             <h1>Ejercicio 1.2: Operador ternario</h1>
             <h3>Ejercicio 1</h2>
-            <p>Operador ternario básico: Escribe una función puedeConducir que acepte la edad como parámetro y utilice el operador ternario <br>
-            para determinar si el usuario puede conducir. Si la edad es 18 o más, debe devolver 'Puedes conducir'. Si no, debe devolver 'No puedes conducir'.</p>
-        </div>   
+                <p>Operador ternario básico: Escribe una función puedeConducir que acepte la edad como parámetro y
+                    utilice el operador ternario <br>
+                    para determinar si el usuario puede conducir. Si la edad es 18 o más, debe devolver 'Puedes
+                    conducir'. Si no, debe devolver 'No puedes conducir'.</p>
+        </div>
         <div class="respuesta">
             <h3>Solucion Ejercicio 1</h3>
             <p>Operador ternario básico: <span id="ternario"> </span></p>
-        </div> 
+        </div>
         <div class="pregunta">
             <h3>Ejercicio 2</h2>
-            <p>Uso con operadores de comparación: Escribe una expresión que utilice el operador ternario para determinar cuál de <br> 
-            los dos números dados (num1 y num2) es mayor. Si num1 es mayor, devuelve 'num1 es mayor'. Si no, devuelve 'num2 es mayor'.</p>
-        </div>   
+                <p>Uso con operadores de comparación: Escribe una expresión que utilice el operador ternario para
+                    determinar cuál de <br>
+                    los dos números dados (num1 y num2) es mayor. Si num1 es mayor, devuelve 'num1 es mayor'. Si no,
+                    devuelve 'num2 es mayor'.</p>
+        </div>
         <div class="respuesta">
             <h3>Solucion Ejercicio 2</h3>
             <p>Uso con operadores de comparación: <span id="comparacion"> </span></p>
-        </div>   
+        </div>
         <div class="pregunta">
             <h3>Ejercicio 3</h2>
-            <p>Uso enlazado de operadores ternarios: Escribe una expresión que utilice enlaces de operadores ternarios para determinar si un número es positivo, negativo o cero.</p>
-            <p>Operador ternario con funciones: Crea una función encontrarMaximo que acepte tres parámetros (a, b, c) y utilice el operador ternario para determinar el valor máximo.</p>
-        </div>   
+                <p>Uso enlazado de operadores ternarios: Escribe una expresión que utilice enlaces de operadores
+                    ternarios para determinar si un número es positivo, negativo o cero.</p>
+                <p>Operador ternario con funciones: Crea una función encontrarMaximo que acepte tres parámetros (a, b,
+                    c) y utilice el operador ternario para determinar el valor máximo.</p>
+        </div>
         <div class="respuesta">
             <h3>Solucion Ejercicio 3</h3>
             <p>Uso enlazado de operadores ternarios: <span id="enlazado"> </span></p>
             <p>Operador ternario con funciones: <span id="maximo"> </span></p>
-        </div>  
+        </div>
         <div class="pregunta">
             <h3>Ejercicio 4</h2>
-            <p>Operador ternario dentro de un bucle: Escribe una función parOImpar que acepte un array de números y utilice un bucle para recorrer el array. <br>
-             Dentro del bucle, utiliza el operador ternario para determinar si cada número es par o impar.</p>
-        </div>   
+                <p>Operador ternario dentro de un bucle: Escribe una función parOImpar que acepte un array de números y
+                    utilice un bucle para recorrer el array. <br>
+                    Dentro del bucle, utiliza el operador ternario para determinar si cada número es par o impar.</p>
+        </div>
         <div class="respuesta">
             <h3>Solucion Ejercicio 4</h3>
             <p>Operador ternario dentro de un bucle: <i>La respuesta se imprime por la consola</i> </p>
         </div>
 
+                                        <!--Ejercicio 1.3: Callbacks-->
+        <div class="pregunta">
+            <h1>Ejercicio 1.3: Callbacks</h1>
+            <h3>Ejercicio 1</h2>
+                <p>Callback básico: Escribe una función llamada procesar que acepte dos parámetros: un número y una
+                    función de callback. <br>
+                    La función procesar debe invocar la función de callback, pasando el número como parámetro.</p>
+        </div>
+        <div class="respuesta">
+            <h3>Solucion Ejercicio 1</h3>
+            <p>Callback básico: <span id="callback"> </span></p>
+        </div>
+        <div class="pregunta">
+            <h3>Ejercicio 2</h2>
+                <p>Callbacks con operaciones matemáticas: Escribe una función calculadora que acepte tres parámetros:
+                    dos números y una función de callback. <br>
+                    La función calculadora debe invocar la función de callback con los dos números como parámetros.
+                    Luego, llama calculadora con una función que realice la suma de los dos números.</p>
+        </div>
+        <div class="respuesta">
+            <h3>Solucion Ejercicio 2</h3>
+            <p>Callbacks con operaciones matemáticas: <i>La respuesta se imprime por la consola</i> </p>
+        </div>
+        <div class="pregunta">
+            <h3>Ejercicio 3</h2>
+                <p>Uso de callbacks en funciones asíncronas: Escribe una función esperarISaludar que acepte dos
+                    parámetros: un nombre y una función de callback. La función debe esperar 2 segundos <br>
+                    y entonces invocar la función de callback, pasando el nombre como parámetro.</p>
+        </div>
+        <div class="respuesta">
+            <h3>Solucion Ejercicio 3</h3>
+            <p>Uso de callbacks en funciones asíncronas: <i>La respuesta se imprime por la consola</i> </p>
+        </div>
+        <div class="pregunta">
+            <h3>Ejercicio 4</h2>
+                <p>Callbacks con arrays: Escribe una función procesarElements que acepte dos parámetros:
+                    un array y una función de callback. <br>La función procesarElements debe invocar la función de
+                    callback
+                    por cada elemento del array.</p>
+        </div>
+        <div class="respuesta">
+            <h3>Solucion Ejercicio 4</h3>
+            <p>Callbacks con arrays: <i>La respuesta se imprime por la consola</i> </p>
+        </div>
+        <div class="pregunta">
+            <h3>Ejercicio 5</h2>
+                <p>Escribe una función procesarCadena que acepte dos parámetros: una cadena de caracteres y una función
+                    de callback. <br>
+                    La función procesarCadena debe convertir la cadena a mayúsculas y entonces invocar la función de
+                    callback con la cadena transformada.</p>
+        </div>
+        <div class="respuesta">
+            <h3>Solucion Ejercicio 5</h3>
+            <p>Convertir la cadena a mayúsculas <i>La respuesta se imprime por la consola</i> </p>
+        </div>
+
     </div>
-        <script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>

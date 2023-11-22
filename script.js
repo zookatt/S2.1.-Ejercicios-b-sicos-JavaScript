@@ -92,3 +92,64 @@ function puedeConducir(edad) {
   const numeros = [6, 7, 8, 9, 10];
   console.log("Array de numeros:", numeros);
   parOImpar(numeros);
+
+  /*________________________________________________________________*/
+
+//Ejercicio 1.3: Callbacks
+//Ejercicio 1
+let procesar = (num3, callback) => {
+    callback(num3);
+  }
+  let callback = (num3) => {
+    console.log("El número recibido es:", num3);
+    document.getElementById("callback").innerHTML = "El número recibido es: " + num3;
+  };
+  
+  procesar(33, callback);
+  
+  //Ejercicio 2
+  let calculadora = (a, b, callback2) => {
+    callback2(a, b);
+  }
+  let sumaCallback2 = (a, b) => {
+    let suma = a + b;
+    console.log("La suma de dos numeros es:", suma);
+  }
+  calculadora(3, 4, sumaCallback2)
+  
+  //Ejercicio 3
+  function esperarISaludar(nombre, callback) {
+    setTimeout(function () {
+      callback(nombre);
+    }, 2000);
+  }
+  
+  esperarISaludar("Katia", function (nombre) {
+    console.log("Hola", nombre);
+  });
+  
+  //Ejercicio 4
+  function procesarElements(array, callback) {
+    for (let i = 0; i < array.length; i++) {
+      callback(array[i]);
+    }
+  }
+  let miCallback = (el) => {
+    console.log("Procesando elemento:", el);
+  };
+  const miArray = [2, 4, 6, 8];
+  procesarElements(miArray, miCallback);
+  
+  //Ejercicio 5
+  function procesarCadena(cadena, callback) {
+    const cadenaMayusculas = cadena.toUpperCase();
+    callback(cadenaMayusculas);
+  }
+  const myCallback = (cadena) => {
+    console.log("Cadena mayusculas:", cadena);
+  };
+  
+  const myCadena = "Hola, mundo!";
+  procesarCadena(myCadena, myCallback);
+
+  
