@@ -152,4 +152,64 @@ let procesar = (num3, callback) => {
   const myCadena = "Hola, mundo!";
   procesarCadena(myCadena, myCallback);
 
-  
+  /*________________________________________________________________*/
+
+//Ejercicio 1.4: Rest & Spread operators
+//Ejercicio 1
+const array1 = [10, 20, 30, 40];
+console.log("Array 1", array1);
+const array2 = [50, 60, 70, 80];
+console.log("Array 2", array2);
+const arraySpread = [...array1, ...array2];
+console.log("Array combinado", arraySpread);
+
+//Ejercicio 2
+function suma(...numeros) {
+  let resultado2 = 0;
+  let i = 0;
+
+  do {
+    resultado2 += numeros[i];
+    i++;
+  } while (i < numeros.length);
+  console.log("Array para sumar", numeros);
+  return resultado2;
+}
+
+const resultado2 = suma(3, 5, 7, 9);
+console.log("La suma es:", resultado2);
+
+//Ejercicio 3
+const objeto1 = { prop1: "Hello", prop2: "World" };
+const objeto2 = { ...objeto1 };
+console.log(objeto2);
+
+objeto2.prop1 = 'Hola';
+console.log(objeto2);
+console.log(objeto1);
+
+//Ejercicio 4
+const myArray = [5, 10, 15, 20, 25];
+
+const [first, second, ...rest] = myArray;
+
+console.log("Primero", first);
+console.log("Segundo", second);
+console.log("Rest", rest);
+
+//Ejercicio 5
+function miFuncion(arg1, arg2, arg3) {
+  console.log("arg1", arg1);
+  console.log("arg2", arg2);
+  console.log("arg3", arg3);
+}
+const newArray = [3, 4, 5];
+miFuncion(...newArray);
+
+//Ejercicio 6
+const object1 = { one: 1, two: 2, three: 3 };
+console.log("Objeto 1", object1);
+const object2 = { four: 4, five: 5, six: 6 };
+console.log("Objeto 2", object2);
+const object3 = { ...object1, ...object2 };
+console.log("Objeto 3 fusionado", object3);
